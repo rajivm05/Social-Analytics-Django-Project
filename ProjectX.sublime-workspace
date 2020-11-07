@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/etc",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/Lib",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/ProjectX",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/ProjectX/__pycache__",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/templates"
+	],
+	"file_history":
+	[
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/ProjectX/urls.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/models.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/templates/search_page.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/views.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/templates/results.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/templates/error_page.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/admin.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/__init__.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/register/templates/homepage.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/ProjectX/settings.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/register/views.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/register/models.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/searchapp/forms.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/register/admin.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/forms.py",
+		"/C/Users/rajiv/Downloads/colorlib-search-1/colorlib-search-1/index.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/models.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/register/forms.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/register/templates/temp.html",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/register/templates/registration/login.html",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/main/templates/main/base.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/register/templates/base.html",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/register/views.py",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/register/templates/register.html",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/register/forms.py",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/register/models.py",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/register/apps.py",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/main/wp_model.py",
+		"/C/Users/rajiv/Downloads/watchnext/watchnext/main/forms.py",
+		"/C/Users/rajiv/Downloads/DBSCAN-Algorithm-master/DBSCAN-Algorithm-master/DBSCAN.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/home/templates/home/base.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/home/templates/home/homepage.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/menu/models.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/home/models.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 9/lab9.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 8/numberguess.html",
+		"/C/xampp/htdocs/check.php",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 8/check.php",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 7/form.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 7/form_to_validate.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 7/compute.php",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 7/form_validation.php",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 7/code1.php",
+		"/C/xampp/htdocs/form_validation.php",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 5/register.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 5/lab4css.css",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 5/lab4.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/home/static/css/homeapp.css",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/home/views.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 5/comp.webp",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/ACM/JavaWorkshop.java",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/ACM/snips.java",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/home/admin.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/home/templates/home/homeapp.css",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/templates/homepage.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/Project_X/src/home/templates/homepage.html",
+		"/C/xampp/htdocs/compute.php",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/wptry.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/form_validation_usingjs.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 6/form_validation_usingjs.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/Among.Us.v2020.9.9s.rar",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/templates/base.html",
+		"/C/xampp/htdocs/numberguess.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/distance/urls.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/templates/address_create.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/views.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/templates/details.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/admin.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/distance/settings.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/templates/home.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/trydjango/urls.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/products/forms.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/templates/address_view.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/products/views.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/templates/home.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/products/models.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/address/migrations/0001_initial.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/distance/src/manage.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/products/templates/products/products_delete.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/products/templates/products/products_create.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/products/templates/products/products_details.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/templates/Product/detail.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/products/migrations/0002_product_features.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/trydjango/settings.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/templates/base.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/templates/navbar.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/pages/views.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/products/admin.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/db.sqlite3",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 6/exp6.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 6/calculatorjs.js",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 6/calculatorcss.css",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 6/calculathor.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/Labs/Experiment 6/form_validation.html",
+		"/C/Users/rajiv/Downloads/register.html",
+		"/C/Users/rajiv/Downloads/register_JS validation.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/trydjango/products/admin.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/trydjango/products/models.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/trydjango/trydjango/settings.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/pyvenv.cfg",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/experiment.java",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/manage.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/WP/dev/trydjango/src/trydjango/__init__.py",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/Web Programming/Labs/Experiment 7/form.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/Web Programming/Labs/Experiment 6/form_validation.html",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/Web Programming/Labs/Experiment 7/compute.php",
+		"/C/Users/rajiv/Downloads/WinSer.java",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/Computer Networks/Labs/Lab 6/Slide_Receiver.java",
+		"/C/Users/rajiv/OneDrive/Desktop/Notes/SEM-5/Computer Networks/Labs/Lab 6/Slide_Sender.java",
+		"/C/Users/rajiv/Downloads/WinClnt.java",
+		"/C/Users/rajiv/Downloads/Slide_Receiver.java",
+		"/C/Users/rajiv/Downloads/Slide_Sender.java"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"social-c",
+			"center",
+			"search_page",
+			"hide",
+			"span",
+			"button",
+			"CAU",
+			" {%"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 65.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ProjectX.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 278.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

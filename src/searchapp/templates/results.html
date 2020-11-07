@@ -1,0 +1,347 @@
+{%load static%}
+<html>
+<head>
+	<title>InterMedia- Results</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+	<style >
+		body {
+		background: rgb(8,8,8);
+		background: -webkit-linear-gradient(to right, rgb(8,8,8), rgb(36,36,36), rgb(8,8,8));
+		background: linear-gradient(to right, rgb(8,8,8), rgb(36,36,36), rgb(8,8,8));
+
+	}
+	.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+	}
+	.logo_container
+	{
+		display: inline;
+		width:30%;
+		padding-left: 10px;
+	}
+	h1
+	{
+		position: absolute;
+		display: inline-block;
+		width:80%;
+		margin-top:3%;
+		font-family: 'Cabin', sans-serif;
+		text-align: center;
+		color: #FFFFFF
+	}
+	#back,#back2search
+	{
+        border-radius: 20px;
+		border: 1px solid #FF4B2B;
+		background-color: #FF4B2B;
+		color: #FFFFFF;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 12px 45px;
+		letter-spacing: 1px;
+		float:right;
+		margin-right:25px;
+	}
+	#header_button
+	{
+		display: inline-block;
+		width:25%;
+		float: right;
+		margin-top:3%;
+	}
+	header
+	{
+		background-color: rgb(28,28,28);
+		border-radius:10px;
+		box-shadow: 0 0 10px;
+	}
+	#inital_analytics
+	{
+		background-color: #FF9A8B;
+		background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+		margin-top:10px;
+		border-radius:10px;
+		box-shadow: 0 0 10px;
+
+	}
+
+	.jinja_divs
+	{
+		color:#FFFFFF;
+		width: 18%;
+		display: inline-block;
+		padding:10px;
+		padding-top:24px;
+		height:10%;
+		font-size: 22px;
+		font-weight: bold;
+		font-family:'Cabin';
+		text-align: center;
+	}
+
+	#neg_block
+	{
+		border-right: 2px solid #ffffff;
+		border-left: 2px solid #ffffff;
+	
+	}
+	#neu_block
+	{
+		border-right: 2px solid #ffffff;	
+	}
+	#mentions_block
+	{
+		border-right: 2px solid #ffffff;	
+	}
+	#content_for_1
+	{
+		display: block;
+	}
+	#content_for_2,#content_for_3,#content_for_4,#content_for_5	
+	{
+		/*display: none;*/
+		width: 100%;
+	}
+	.nav_button
+	{
+		margin-top:50px;
+	}
+	.magic_buttons
+	{
+		font-family: 'Cabin', sans-serif;
+		font-size:20px;
+		text-decoration:none;
+		color:#FFFFFF;
+		text-align:center;
+		display: inline-block;
+		padding:10px;
+		width:18%;
+		height:5%;
+		padding-top:20px;
+		border-top-left-radius:20px;
+		border-top-right-radius:20px;
+	}
+	#content_for_2 div
+	{
+		display: inline-block;
+		margin:10px;
+	}
+	hr
+	{
+		margin-top:0px;
+	}
+	a:hover,a.current
+	{
+		background-color: #FF9A8B;
+		background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+	}
+	.post_box
+	{
+		position:relative;
+		color: #FFFFFF;
+		border: 1px solid #000000;
+		border-radius: 20px;
+		box-shadow: -2px -2px 8px #8400ff, 2px 2px 8px #ff005a;
+		display: inline-block;
+		width:300px;
+		min-height: 400px;
+		background-color: rgba(68,0,71,0.2);
+		padding: 20px 5px;
+		margin: 12px 12px;
+		font-size:18px;
+		font-family:'Cabin';
+		vertical-align: top ;
+		box-sizing: border-box;	
+		word-wrap:break-word;
+
+	}
+	#content_for_5
+	{
+		position:absolute;
+	}
+	</style>
+</head>
+<body onload="load_remove()">
+	<header>
+		<div class="se-pre-con"></div>
+		<div class="logo_container">
+				<img src="{% static 'logo.png' %}" width="8%" alt="Logo">
+			</div>
+		<h1>Analytics Dashboard</h1>
+		<span id="header_button">
+			<input type="button" value="Log out" id="back" onclick= "redirectTo()">
+			<input type="button" value="Back to Search" id="back2search" onclick= "redirectToSearch()">
+		</span>
+	</header>
+	<div  id="inital_analytics">
+			{% for item in percentages%}
+				{% if forloop.counter is 1 %}
+				<div class="jinja_divs">
+					Positive sentiment: <br>{{item}}%
+				</div>
+				<div class="jinja_divs" id="neg_block">
+				{% elif forloop.counter is 2 %}
+					Negative sentiment:<br> {{item}}%
+				</div>
+				<div class="jinja_divs" id="neu_block">
+				{% elif forloop.counter is 3 %}
+					Neutral sentiment:<br> {{item}}%
+				</div>
+				<div class="jinja_divs" id="mentions_block">
+				{% elif forloop.counter is 4 %}
+					Total mentions:<br> {{item}}
+				</div>
+				<div class="jinja_divs">
+				{%elif forloop.counter is 5 %}
+					Trending on:<br> {{item}}
+				</div>
+				{%endif%}
+			{% endfor %}
+	</div>
+	<div class="nav_button">
+		<a href="#" class="magic_buttons current" id="button_1" onclick= "showbutt1()">Posts Per Network</a>
+		<a href="#" class="magic_buttons" id="button_2" onclick= "showbutt2()">Sentiment Per Network</a>
+		<a href="#" class="magic_buttons" id="button_3" onclick= "showbutt3()">Keywords</a>
+		<a href="#" class="magic_buttons" id="button_4" onclick= "showbutt4()">Posts By Hour</a>
+		<a href="#" class="magic_buttons" id="button_5" onclick= "showbutt5()">Influential Posts</a> 
+		<hr>
+	</div>
+	<div id ="content_for_1">
+		{{g1|safe}}
+	</div>
+	<div id ="content_for_2">
+		{% for graph in g2 %}
+		{{graph|safe}}
+		{%endfor%}
+	</div>
+	<div id ="content_for_3">
+		{{g3|safe}}
+	</div>
+	<div id ="content_for_4">
+		{{g4|safe}}
+	</div>
+	<div id ="content_for_5">
+		<!-- #network,text,sentiment,followers -->
+		{% for row in data %}
+		<div class="post_box">
+			{%for col in row%}
+				{% if forloop.counter is 1 %}
+				<div class="post_network_div">
+					Posted on <b>{{col.title }}</b>
+				</div><br>
+				<div class="post_text_div">
+				{% elif forloop.counter is 2 %}
+					<i>"{{col}}"</i>
+				</div><br>
+				<div class="post_sentiment_div">
+				{% elif forloop.counter is 3 %}
+					Sentiment: <b>{{col.title}}</b>
+				</div><br>
+				<div class="post_follower_div" >
+				{% elif forloop.counter is 4 %}
+					Number of followers of user: <b>{{col}}</b>
+				</div><br>
+				{%endif%}
+			{%endfor%}
+		</div>
+		{% endfor %}
+	</div>
+
+</body>
+</html>
+<script>
+	$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	function redirectTo()
+	{
+		location.href="http://127.0.0.1:8000/"
+	}
+	function redirectToSearch()
+	{
+		location.href="http://127.0.0.1:8000/search/"
+	}
+	function showbutt1()
+	{
+		document.getElementById("content_for_2").style.display="none";
+		document.getElementById("button_1").classList.add("current");
+		document.getElementById("content_for_3").style.display="none"; 
+		document.getElementById("content_for_4").style.display="none"; 
+		document.getElementById("content_for_5").style.display="none"; 
+		document.getElementById("content_for_1").style.display="block"; 
+		document.getElementById("button_2").classList.remove("current");
+		document.getElementById("button_3").classList.remove("current");
+		document.getElementById("button_4").classList.remove("current");
+		document.getElementById("button_5").classList.remove("current");
+	}
+	function showbutt2()
+	{
+		document.getElementById("content_for_1").style.display="none";
+		document.getElementById("content_for_3").style.display="none"; 
+		document.getElementById("content_for_4").style.display="none"; 
+		document.getElementById("content_for_5").style.display="none";  
+		document.getElementById("content_for_2").style.display="block"; 
+		document.getElementById("button_2").classList.add("current");	
+		document.getElementById("button_1").classList.remove("current");
+		document.getElementById("button_3").classList.remove("current");
+		document.getElementById("button_4").classList.remove("current");
+		document.getElementById("button_5").classList.remove("current");
+	}
+	function showbutt3()
+	{
+		document.getElementById("content_for_1").style.display="none";
+		document.getElementById("content_for_2").style.display="none"; 
+		document.getElementById("content_for_3").style.display="block";
+		document.getElementById("content_for_4").style.display="none"; 
+		document.getElementById("content_for_5").style.display="none";
+		document.getElementById("button_3").classList.add("current");
+		document.getElementById("button_1").classList.remove("current");
+		document.getElementById("button_2").classList.remove("current");
+		document.getElementById("button_4").classList.remove("current");
+		document.getElementById("button_5").classList.remove("current");   
+	}
+	function showbutt4()
+	{
+		document.getElementById("content_for_1").style.display="none";
+		document.getElementById("content_for_2").style.display="none"; 
+		document.getElementById("content_for_4").style.display="block";
+		document.getElementById("content_for_3").style.display="none"; 
+		document.getElementById("content_for_5").style.display="none"; 
+		document.getElementById("button_4").classList.add("current"); 
+		document.getElementById("button_2").classList.remove("current");
+		document.getElementById("button_3").classList.remove("current");
+		document.getElementById("button_1").classList.remove("current");
+		document.getElementById("button_5").classList.remove("current"); 
+	}
+	function showbutt5()
+	{
+		document.getElementById("content_for_1").style.display="none";
+		document.getElementById("content_for_2").style.display="none"; 
+		document.getElementById("content_for_5").style.display="block";
+		document.getElementById("content_for_4").style.display="none"; 
+		document.getElementById("content_for_3").style.display="none";
+		document.getElementById("button_5").classList.add("current");
+		document.getElementById("button_2").classList.remove("current");
+		document.getElementById("button_3").classList.remove("current");
+		document.getElementById("button_4").classList.remove("current");
+		document.getElementById("button_1").classList.remove("current");
+	}
+	function load_remove()
+	{
+		document.getElementById("content_for_2").style.display="none";
+		document.getElementById("content_for_3").style.display="none";
+		document.getElementById("content_for_4").style.display="none";
+		document.getElementById("content_for_5").style.display="none";
+	}	
+</script>

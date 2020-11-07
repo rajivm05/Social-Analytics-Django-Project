@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Error Page</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+
+    <style>
+        * {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        body {
+          padding: 0;
+          margin: 0;
+           background-color: #000000;  
+        }
+
+        #notfound {
+          position: relative;
+          height: 100vh;
+        }
+
+        #notfound .notfound {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+        }
+
+        .notfound {
+          max-width: 520px;
+          width: 100%;
+          line-height: 1.4;
+          text-align: center;
+        }
+.notfound .notfound-404 {
+          position: relative;
+          height: 240px;
+        }
+
+        .notfound .notfound-404 h1 {
+          font-family: 'Montserrat', sans-serif;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          font-size: 252px;
+          font-weight: 900;
+          margin: 0px;
+          color: #000000;
+          text-transform: uppercase;
+          letter-spacing: -40px;
+          margin-left: -20px;
+        }
+
+        .notfound .notfound-404 h1>span {
+          text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;
+        }
+
+        .notfound .notfound-404 h3 {
+          font-family: 'Cabin', sans-serif;
+          position: relative;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #ffffff;
+          margin: 0px;
+          letter-spacing: 3px;
+          padding-left: 6px;
+        }
+
+        .notfound h2 {
+          font-family: 'Cabin', sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #ffffff;
+          margin-top: 0px;
+          margin-bottom: 25px;
+        }
+        #back
+        {
+	        border-radius: 20px;
+			border: 1px solid #FF4B2B;
+			background-color: #FF4B2B;
+			color: #FFFFFF;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 12px 45px;
+			letter-spacing: 1px;
+		}
+    </style>
+
+</head>
+
+<body>
+
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h3>Oops! Something unexpected happened!</h3>
+                <h1><span>5</span><span>0</span><span>0</span></h1>
+            </div>
+            <h2>We are currently unable to fulfill your request because of an internal server error!</h2><br>
+            <input type="button" value="Back to search" id="back" onclick= 	"redirectTo()">
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+	function redirectTo()
+	{
+		location.href="http://127.0.0.1:8000/search/"
+	}
+</script>
