@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.conf import settings
 from .forms import SearchForm
 import requests
 import json
@@ -24,7 +25,7 @@ def add_None(l,post_count):
 def get_posts(query,lang="en"):
     response_list=[]
     limit=1000
-    API_KEY="29c8bf6be225c26786640b80d18d2319"
+    API_KEY=settings.API_KEY
     url="https://api.social-searcher.com/v2/search?q="+query+"&limit="+str(limit)+"&lang="+lang+"&key="+API_KEY
     print("URL",url)
     res1=requests.get("https://api.social-searcher.com/v2/search?q="+query+"&limit="+str(limit)+"&lang="+lang+"&key="+API_KEY)

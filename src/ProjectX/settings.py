@@ -21,7 +21,7 @@ print(BASE_DIR)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '_jly-bfu5pcskhv8)=51l$r$9kkv4)$%%kz_#6nw^x*mta_iwv'
-
+API_KEY = '29c8bf6be225c26786640b80d18d2319'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
