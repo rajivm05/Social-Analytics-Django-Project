@@ -204,7 +204,6 @@ def results_page(request):
         query = query+  ' -'+minus_words
     print("Query: ",query)
     try:
-        #  positive negative neutral mentions network
         response_list=get_posts(query,language)
         data_collected=dataset_generator(response_list)
         with concurrent.futures.ThreadPoolExecutor() as executor:
@@ -213,19 +212,13 @@ def results_page(request):
             posts_by_time_thread=executor.submit(posts_by_time,data_collected)
             top_influential_thread=executor.submit(top_influential,data_collected)
             sentiment_per_network_thread=executor.submit(network_sentiment_graph,data_collected)
-        # percentages=get_percentages(data_collected)
         percentages=get_percentages_list.result()
         print(percentages)
-        # posts_per_network_graph=posts_per_network(data_collected)
         posts_per_network_graph=posts_per_network_thread.result()
-        # sentiment_per_network_graph=network_sentiment_graph(data_collected)
         sentiment_per_network_graph=sentiment_per_network_thread.result()
         word_freq=word_frequency(data_collected,keywords,exact_phrase)
-        # graph_posts_by_time=posts_by_time(data_collected)
         graph_posts_by_time=posts_by_time_thread.result()
         data=top_influential_thread.result()
-        # data=top_influential(data_collected)
-        # network,text,sentiment,date,followers
         context={"g1":posts_per_network_graph ,"g2":sentiment_per_network_graph,"g3":word_freq,"g4":graph_posts_by_time,"percentages":percentages,"data":data}
     except Exception as ex:
         print(ex)
