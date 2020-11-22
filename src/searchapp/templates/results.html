@@ -170,6 +170,12 @@
 	{
 		position:absolute;
 	}
+	.post_box_icon
+	{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+	}
 	</style>
 </head>
 <body onload="load_remove()">
@@ -180,8 +186,8 @@
 			</div>
 		<h1>Analytics Dashboard</h1>
 		<span id="header_button">
-			<input type="button" value="Log out" id="back" onclick= "redirectTo()">
-			<input type="button" value="Back to Search" id="back2search" onclick= "redirectToSearch()">
+			<input type="button" value="Comparative Search" id="back" onclick= "redirectTo()">
+			<!-- <input type="button" value="Back to Search" id="back2search" onclick= "redirectToSearch()"> -->
 		</span>
 	</header>
 	<div  id="inital_analytics">
@@ -237,6 +243,39 @@
 		<div class="post_box">
 			{%for col in row%}
 				{% if forloop.counter is 1 %}
+				<div class="post_box_icon">
+					{% ifequal col 'twitter' %}
+						<img src="{% static 'twittericon.png' %}" width="14%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'facebook' %}
+						<img src="{% static 'facebookicon.png' %}" width="15%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'tumblr' %}
+						<img src="{% static 'tumblricon.png' %}" width="15%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'web' %}
+						<img src="{% static 'webicon.png' %}" width="14%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'reddit' %}
+						<img src="{% static 'redditicon.png' %}" width="15%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'youtube' %}
+						<img src="{% static 'youtubeicon.png' %}" width="14%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'flickr' %}
+						<img src="{% static 'flickricon.png' %}" width="15%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'dailymotion' %}
+						<img src="{% static 'dailyicon.png' %}" width="12%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'vimeo' %}
+						<img src="{% static 'vimeoicon.png' %}" width="15%" alt="Logo">
+					{%endifequal%}
+					{% ifequal col 'vkontakte' %}
+						<img src="{% static 'vkonicon.png' %}" width="14%" alt="Logo">
+					{%endifequal%}
+				</div>
+				<br>
 				<div class="post_network_div">
 					Posted on <b>{{col.title }}</b>
 				</div><br>
@@ -266,12 +305,9 @@
 	});
 	function redirectTo()
 	{
-		location.href="http://127.0.0.1:8000/"
+		location.href="http://127.0.0.1:8000/compare/"
 	}
-	function redirectToSearch()
-	{
-		location.href="http://127.0.0.1:8000/search/"
-	}
+	
 	function showbutt1()
 	{
 		document.getElementById("content_for_2").style.display="none";

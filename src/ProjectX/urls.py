@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from register.views import homepage
 from searchapp.views import search_page,results_page,error_page
+from compareapp.views import compare_page
 urlpatterns = [
 	path('admin/', admin.site.urls),
 	path('',homepage),
 	path('search/',search_page,name='search'),
 	path('results/',results_page,name='results'),
 	path('error/',error_page,name='error'),
+    path('compare/',compare_page,name='compare'),
 ]
 

@@ -21,7 +21,12 @@ print(BASE_DIR)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '_jly-bfu5pcskhv8)=51l$r$9kkv4)$%%kz_#6nw^x*mta_iwv'
-API_KEY = '29c8bf6be225c26786640b80d18d2319'
+
+#API KEYS
+
+# API_KEY = '160d4524c42aa27eb285ee4e56ad0083'
+API_KEY='28e6e76c29ecf4ce6e5e151cdc0050cc'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -48,6 +53,7 @@ INSTALLED_APPS = [
     #my apps
     'register',
     'searchapp',
+    'compareapp',
 
 
 

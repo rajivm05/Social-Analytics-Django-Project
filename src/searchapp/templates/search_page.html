@@ -189,6 +189,11 @@
 		width: 250px;
 
 	}
+	#comparebutton
+	{
+		background-color: #eee;
+
+	}
 	</style>
 	}
 	</head>
@@ -214,9 +219,16 @@
 					Adding in an exact phrase will show the results which have an exact match with the given phrase.<br><br>
 					Minus Words means filtering out posts which have the entered words/phrase. 
 				</p><br>
+				<button class="ghost" id="signUp" onclick="redirectTo()">Use Comparative Search</button>
 			</div>
 		</div>
 	</div>
 </div>
   	</body>
 </html>
+<script>
+	function redirectTo()
+	{
+		location.href="http://127.0.0.1:8000/compare"
+	}
+</script>
